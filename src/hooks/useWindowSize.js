@@ -18,10 +18,10 @@ const useWindowSize = () => {
 
         window.addEventListener("resize", handleResize);
 
-        const cleanUp = () => {
-            console.log("run if a useEffect dep changes")
-            window.removeEventListener("resize", handleResize);
-        }
+        // const cleanUp = () => {
+        //     console.log("run if a useEffect dep changes")
+        //     window.removeEventListener("resize", handleResize);
+        // }
 
         return () => window.removeEventListener("resize", handleResize);
 
